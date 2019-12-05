@@ -1,0 +1,30 @@
+<div *ngIf="isDataAvailable">
+  <table class="table">
+    <thead>
+      <th>Giriş Tarihi</th>
+      <th>Servis Kodu</th>
+      <th>Müşteri Adı</th>
+      <th>Müşteri Telefonu</th>
+      <th>Ürün Kodu</th>
+      <th>Açıklama</th>
+      <th>Ödeme Tipi</th>
+      <th>Stok No</th>
+      <th>Durumu</th>
+      <th>Çıkış Tarihi</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let defect of defects">
+        <td>{{defect.entrydate}}</td>
+        <td>{{defect.servicecode}}</td>
+        <td>{{defect.customername}}</td>
+        <td>{{defect.customerphone}}</td>
+        <td>{{defect.productcode}}</td>
+        <td>{{defect.explanation}}</td>
+        <td>{{defect.paymenttype}}</td>
+        <td>{{defect.stocknum}}</td>
+        <td>{{defect.status}}</td>
+        <td>{{defect.exitdate}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

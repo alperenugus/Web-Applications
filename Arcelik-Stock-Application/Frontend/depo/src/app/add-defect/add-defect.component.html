@@ -1,0 +1,30 @@
+<form #defectData="ngForm" (ngSubmit)="onClickSubmit(defectData.value); defectData.reset()" ngNativeValidate>
+  <div class="form-group">
+    <label for="customer_name">Servis Kodu</label>
+    <input type="text" class="form-control" name="servicecode" placeholder="Servis Kodu" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="customer_name">Müşteri Adı</label>
+    <input type="text" class="form-control" name="customername" placeholder="Müşteri Adı" ngModel required>
+  </div>
+  <div class="form-group">
+    <label for="customer_phone">Müşteri Telefonu</label>
+    <input type="text" class="form-control" name="customerphone" placeholder="Müşteri Telefonu" ngModel required>
+  </div>
+  <div class="form-group">
+    <label for="product_num">Ürün Kodu</label>
+    <input type="text" class="form-control" name="productcode" placeholder="Ürün Kodu" ngModel required>
+  </div>
+  <div class="form-group">
+    <label for="explanation">Açıklama / Şikayet</label>
+    <input type="text" class="form-control" name="explanation" placeholder="Açıklama / Şikayet" ngModel required>
+  </div>
+  <div class="form-group">
+    <label for="payment_type">GRT/ÜCRT</label>
+    <select class="form-control" name="paymenttype" ngModel required>
+      <option>GRT</option>
+      <option>ÜCRT</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

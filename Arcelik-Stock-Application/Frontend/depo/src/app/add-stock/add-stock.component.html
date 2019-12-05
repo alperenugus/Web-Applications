@@ -1,0 +1,26 @@
+<form #stockData="ngForm" (ngSubmit)="onClickSubmit(stockData.value); stockData.reset()" ngNativeValidate>
+  <div class="form-group">
+    <label for="customer_name">Stok Numarası</label>
+    <input type="text" class="form-control" name="stocknum" placeholder="Stok Numarası" ngModel required>
+  </div>
+  <div class="form-group">
+    <label for="countnum">Adet</label>
+    <input type="text" class="form-control" name="countnum" placeholder="Stok Numarası" ngModel required>
+  </div>
+  <button type="submit" class="btn btn-primary">Ekle</button>
+</form>
+
+<div *ngIf="isDataAvailable">
+  <table class="table">
+    <thead>
+      <th>Stok No</th>
+      <th>Adet</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let stock of stocks">
+        <td>{{stock.stocknum}}</td>
+        <td>{{stock.countnum}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

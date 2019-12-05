@@ -1,0 +1,60 @@
+<form #searchType="ngForm" (ngSubmit)="onClickSubmit(searchType.value);" ngNativeValidate>
+  <div class="form-group">
+    <label for="status">Kategori</label>
+    <select class="form-control" name="searchType" (change)="optionChanged()" ngModel required>
+      <option>MÜŞTERİ ADI</option>
+      <option>SERVİS KODU</option>
+      <option>TESLİM DURUMU</option>
+    </select>
+  </div>
+  <button *ngIf="!categorySelected" type="submit" class="btn btn-primary">Kategori Seç</button>
+</form>
+
+<form *ngIf="categorySelected" #searchData="ngForm" (ngSubmit)="onClickSearch(searchData.value); searchData.reset()"
+  ngNativeValidate>
+  <div class="form-group" *ngIf="!isOptional">
+    <input type="text" class="form-control" name="searchparam" placeholder="{{category}}" ngModel required>
+  </div>
+  <div class="form-group" *ngIf="isOptional">
+    <select class="form-control" name="searchparam" ngModel required>
+      <option>BEKLİYOR</option>
+      <option>HAZIR</option>
+      <option>TESLİM EDİLDİ</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Ara</button>
+</form>
+
+<div *ngIf="isDataAvailable">
+  <table class="table">
+    <thead>
+      <th>Giriş Tarihi</th>
+      <th>Servis Kodu</th>
+      <th>Müşteri Adı</th>
+      <th>Müşteri Telefonu</th>
+      <th>Ürün Kodu</th>
+      <th>Seri No</th>
+      <th>Açıklama</th>
+      <th>Ödeme Tipi</th>
+      <th>Stok No</th>
+      <th>Durumu</th>
+      <th>Çıkış Tarihi</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let defect of defects">
+        <td>{{defect.entrydate}}</td>
+        <td>{{defect.servicecode}}</td>
+        <td>{{defect.customername}}</td>
+        <td>{{defect.customerphone}}</td>
+        <td>{{defect.productcode}}</td>
+        <td>{{defect.serialnum}}</td>
+        <td>{{defect.explanation}}</td>
+        <td>{{defect.paymenttype}}</td>
+        <td>{{defect.stocknum}}</td>
+        <td>{{defect.status}}</td>
+        <td>{{defect.exitdate}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
