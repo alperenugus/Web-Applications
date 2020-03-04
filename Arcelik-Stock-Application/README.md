@@ -23,7 +23,7 @@ CREATE TABLE defects(
 	productcode text not null,
 	explanation text not null,
 	paymenttype text not null,
-	stocknum text not null,
+	stocknum text,
 	status text not null,
-	exitdate text not null
+	exitdate text
 )
