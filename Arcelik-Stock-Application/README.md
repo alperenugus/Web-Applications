@@ -12,7 +12,7 @@ CREATE TABLE stock(
 	id serial primary key,
 	stocknum text not null,
 	countnum text not null
-)
+    );
 
 CREATE TABLE defects(
 	id serial primary key,
