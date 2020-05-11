@@ -1,0 +1,35 @@
+<app-home
+(routeChange) = "onRouteChange($event)"
+*ngIf="route==='home'"></app-home>
+
+<app-home-en
+(routeChange) = "onRouteChange($event)"
+*ngIf="route==='home-en'"
+></app-home-en>
+
+<app-links
+(routeChange) = "onRouteChange($event)"
+*ngIf="route==='links'"></app-links>
+
+<app-links-en
+(routeChange) = "onRouteChange($event)"
+*ngIf="route==='links-en'">
+></app-links-en>
+
+<app-notes
+(routeChange) = "onRouteChange($event)"
+*ngIf="route==='notes'"></app-notes>
+
+<app-notes-en
+(routeChange) = "onRouteChange($event)"
+*ngIf="route==='notes-en'"
+></app-notes-en>
+
+<app-faq
+(routeChange) = "onRouteChange($event)"
+*ngIf="route==='faq'"></app-faq>
+
+<app-faq-en
+(routeChange) = "onRouteChange($event)"
+*ngIf="route==='faq-en'"
+></app-faq-en>

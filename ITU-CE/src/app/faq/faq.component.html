@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ITU CE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container nav-alpi">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid nav-alt-alpi">
+        <div class="navbar-header">
+          <a class="navbar-brand">Alperen ÜGÜŞ</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#anasayfa" (click)="routeChanged('home')"><u>Anasayfa</u></a></li>
+          <li><a href="#notlar" (click)="routeChanged('notes')"><u>Ders Notları</u></a></li>
+          <li><a href="#linkler" (click)="routeChanged('links')"><u>Faydalı Linkler</u></a></li>
+          <li><a href="#sss" (click)="routeChanged('faq')"><u>Sık Sorulan Sorular</u></a></li>
+          <li><a href="#faq" (click)="routeChanged('faq-en')"><u>English</u></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="container">
+    <div class="jumbotron">
+      <img class="itu-logo center" src="./assets/images/sss.png">
+      <h1 class="display-4">Sık Sorulan Sorular</h1>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#collapse1">Ders Seçimleri</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body">Lisansa yeni başlayacak bir öğrencinin ders seçimleri sistem tarafından 
+            otomatik olarak bir kereliğine mahsus yapılmaktadır. Sonraki dönemlerde tüm öğrencilerden kendi programlarını
+            kendilerinin hazırlamaları beklenmektedir. Her dersin CRN adı verilen bir kodu vardır ve ders seçimlerinden
+            bir süre önce hangi derslerin açılacağı, bu derslerin gün ve saatleri <a href="http://www.sis.itu.edu.tr/" target="_blank">
+            İTÜ SİS</a>'te ilan edilmektedir. Öğrenciler, yaptıkları programda bulunan derslerin CRN kodlarını sistem
+            açıldığı zaman İTÜ SİS'te bulunan 'Öğrenci Servisi/Kayıt Menüsü/Ders Ekle/Çıkar' sayfasına girip gönderdikleri
+            zaman, derslerin koşullarını sağlıyorlarsa ve kontenjanları dolmamışsa kayıtları sistem tarafından yapılır. 
+            Burada sistem saatinin yaklaşık 1,5-2 dakika ileri olduğunu belirtmekte fayda var. Tahmin edersiniz ki ortalama
+            7-8 CRN kodunu tek tek elle girmek çok vakit alacaktır. Dolayısıyla bu amaçla <a href="https://ituscheduler.com/" target="_blank">İTÜ-Scheduler</a> gibi çeşitli yardımcı araçlar yine İTÜ 
+            öğrencileri tarafından kullanıma sunulmuştur. Bu süreçte hangi dersleri almanız gerektiğini, o derslerin ön şartlarının
+            olup olmadığını bilmenizde ve aşağıdaki linkleri incelemenizde fayda var:<br>
+            <a href="http://www.sis.itu.edu.tr/tr/dersplan/index.php?fakulte=BB" target="_blank">İTÜ Bilgisayar Mühendisliği Ders Programları</a><br>
+            <a href="http://www.sis.itu.edu.tr/tr/akademik_takvim/" target="_blank">İTÜ Akademik Takvim</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#collapse2">Staj Süreci</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">İTÜ Bilgisayar Mühendisliği'nde 20+20 olmak üzere toplamda 40 iş günü staj yapılması mezuniyet için zorunludur.
+            Staj için okul tarafından iki ve üçüncü sınıf yazları zamanında mezun olunabilmesi için tavsiye edilmektedir. Kendi tecrübelerime binaen,
+            zaten birinci sınıf yazında öğrenci, sadece havuz dersleri ve bir iki bölüm dersi almış olduğu için sektörde bir projede yer alabilecek kadar bilgi
+            birikimine sahip olmamaktadır ve de firmalar tarafından tercih edilmemektedir. Hatta firmalar genellikle üç ve dördüncü sınıf öğrencileri almak
+            istiyorlar ki mezuniyet sonrasında da bu öğrencilerle devam edebilsinler. Şahsi görüşüm, lisanstaki bir öğrenci kesinlikle -eskilerin tabiriyle- 
+            balon staj yapmamalı tam aksine okuldaki teorik bilgilerin pratiğe nasıl döküldüğünü öğrenmelidir. Staj sürecim kendi adıma bölüme bakışımı değiştirmiş,
+            gerçek bir projede yer almak da özgüvenimi tazelemişti.<br>
+            Staj süreciyle alakalı her şey <a href="https://portal.itu.edu.tr/" target="_blank">İTÜ-Portal</a>
+            'dan yapılmaktadır. Portaldaki staj esaslarını dikkatle okumanızı tavsiye ederim.
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#collapse3">İngilizce</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">Çağımızın, bölümümüzün ve de mühendisliğin en temel gerekliliklerinden birisi olan İngilizce konusunda sizlere faydalı olabilecek
+            birkaç kitap: <br>
+            <a href="https://drive.google.com/open?id=0B9GjhTKu_Le5bnBwT2VwOHpCZVk" target="_blank">TOEFL-SAT Kitapları</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
+  </div>
+
+
+
+
+  <div class="container social-alpi">
+    <a href="https://tr.linkedin.com/in/alperenugus" target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/alperen_ugus" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.facebook.com/ugusalperen"   target="_blank" class="fa fa-facebook"></a>
+  </div>
+</body>
+
+</html>

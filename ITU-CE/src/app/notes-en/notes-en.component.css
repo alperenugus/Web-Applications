@@ -1,0 +1,49 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-inverse {
+    border-width: 2px;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+}
+
+.nav-alpi {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.itu-logo {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.nav-alt-alpi {
+    background-color:#1C3D5A;
+}
+
+
+.btn-primary{
+    padding: 1%;
+    font-size: 150%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.social-alpi {
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ITU CE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container nav-alpi">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid nav-alt-alpi">
+        <div class="navbar-header">
+          <a class="navbar-brand">Alperen ÜGÜŞ</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#anasayfa" (click)="routeChanged('home')"><u>Anasayfa</u></a></li>
+          <li><a href="#notlar" (click)="routeChanged('notes')"><u>Ders Notları</u></a></li>
+          <li><a href="#linkler" (click)="routeChanged('links')"><u>Faydalı Linkler</u></a></li>
+          <li><a href="#sss" (click)="routeChanged('faq')"><u>Sık Sorulan Sorular</u></a></li>
+          <li><a href="#home" (click)="routeChanged('home-en')"><u>English</u></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="container">
+    <div class="jumbotron">
+      <img class="itu-logo center" src="./assets/images/itu.png">
+      <h1 class="display-4">İstanbul Teknik Üniversitesi</h1>
+      <p class="lead">Bilgisayar ve Bilişim Fakültesi</p>
+      <p class="lead">Bilgisayar Mühendisliği</p>
+      <button type="button" class="btn btn-primary" (click)="routeChanged('notes')">Ders Notları</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="jumbotron">
+      <p>
+        Arkadaşlar merhaba, kişisel web sayfama hoşgeldiniz. Bu websitesinin amacı bugüne kadar tuttuğum notları, sınavları, faydalı
+        linkleri ve ders içeriklerini sizlerle paylaşmanın yanı sıra Angular 6 ile bir proje geliştirmiş olmaktır. Umarım
+        buradaki dökümanlar işinize yarar. Herhangi bir soru veya öneri için sosyal medya hesaplarımdan bana ulaşabilirsiniz.
+        İyi çalışmalar.
+      </p>
+    </div>
+  </div>
+
+  <div class="container social-alpi">
+    <a href="https://tr.linkedin.com/in/alperenugus" target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/alperen_ugus" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.facebook.com/ugusalperen"   target="_blank" class="fa fa-facebook"></a>
+  </div>
+
+</body>
+
+</html>
