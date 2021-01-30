@@ -2,7 +2,7 @@ import React, {FC, ReactElement} from 'react';
 import './RestaurantsListItem.css'
 import Restaurant from '../../models/Restaurant';
 
-interface RestaurantProps {
+export interface RestaurantProps {
     index: number;
     restaurant: Restaurant;
 }
